@@ -13,8 +13,11 @@ class ProfileViewController: UIViewController {
 
     private let profileImageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.frame.size = CGSize(width: 100, height: 100)
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = imageView.frame.size.width/2
+        imageView.layer.masksToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.image = UIImage(named: "arip")
         return imageView
@@ -42,6 +45,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Detail Resto"
+        view.addSubview(profileImageView)
         setupViews()
     }
     
@@ -50,16 +54,18 @@ class ProfileViewController: UIViewController {
     private func setupViews() {
         view.backgroundColor = .white
         
-        let stackView = UIStackView(arrangedSubviews: [profileImageView, nameLabel, bioLabel])
+        let stackView = UIStackView(arrangedSubviews: [nameLabel, bioLabel])
         stackView.axis = .vertical
         stackView.spacing = 16
         stackView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(stackView)
         
         NSLayoutConstraint.activate([
-            profileImageView.widthAnchor.constraint(equalToConstant: 200),
-            profileImageView.heightAnchor.constraint(equalToConstant: 200),
-            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+//            profileImageView.widthAnchor.constraint(equalToConstant: 200),
+//            profileImageView.heightAnchor.constraint(equalToConstant: 200),
+            profileImageView.bottomAnchor.constraint(equalTo: stackView.topAnchor),
+            profileImageView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 16),
+            stackView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height/2),
             stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
             stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
             stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16)

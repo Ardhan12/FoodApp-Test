@@ -94,7 +94,7 @@ class ViewController: UIViewController {
 ////            button.centerXAnchor.constraint(equalTo: viewPage.centerXAnchor),
 //            button.centerYAnchor.constraint(equalTo: viewPage.centerYAnchor),
 //
-            tableView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height/2),
+            tableView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height),
             tableView.bottomAnchor.constraint(equalTo: viewPage.bottomAnchor),
             tableView.leftAnchor.constraint(equalTo: viewPage.leftAnchor),
             tableView.rightAnchor.constraint(equalTo: viewPage.rightAnchor)
@@ -128,7 +128,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let vc = ProfileViewController()
+        let vc = DetailViewController()
         self.navigationController?.pushViewController(vc, animated: true)
         print("cell tapped")
     }

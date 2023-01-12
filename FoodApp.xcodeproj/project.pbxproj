@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE1A88C2297019B0001AE5FE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A88C1297019B0001AE5FE /* DetailViewController.swift */; };
 		BEAF803A29520D3000DC0CC3 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF803929520D3000DC0CC3 /* MenuTableViewCell.swift */; };
 		BEAF803C2953601500DC0CC3 /* APIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF803B2953601500DC0CC3 /* APIViewController.swift */; };
 		BEAF803E2954171900DC0CC3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF803D2954171900DC0CC3 /* ProfileViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE1A88C1297019B0001AE5FE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BEAF803929520D3000DC0CC3 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		BEAF803B2953601500DC0CC3 /* APIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewController.swift; sourceTree = "<group>"; };
 		BEAF803D2954171900DC0CC3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				BEEFB8362951659C00A8E849 /* Managers */,
 				BEEFB8262951658300A8E849 /* ViewController.swift */,
 				BEAF803929520D3000DC0CC3 /* MenuTableViewCell.swift */,
+				BE1A88C1297019B0001AE5FE /* DetailViewController.swift */,
 				BEAF803B2953601500DC0CC3 /* APIViewController.swift */,
 				BEAF803D2954171900DC0CC3 /* ProfileViewController.swift */,
 				BEAF80412955B0A400DC0CC3 /* ApiService.swift */,
@@ -191,6 +194,7 @@
 				BEEFB8232951658300A8E849 /* AppDelegate.swift in Sources */,
 				BEAF803C2953601500DC0CC3 /* APIViewController.swift in Sources */,
 				BEAF803A29520D3000DC0CC3 /* MenuTableViewCell.swift in Sources */,
+				BE1A88C2297019B0001AE5FE /* DetailViewController.swift in Sources */,
 				BEAF80422955B0A400DC0CC3 /* ApiService.swift in Sources */,
 				BEEFB8252951658300A8E849 /* SceneDelegate.swift in Sources */,
 			);
